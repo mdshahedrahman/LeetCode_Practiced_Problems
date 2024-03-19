@@ -9,9 +9,9 @@ class Solution:
             else:
                 temp [i] = 1
 
-        sorted_counts = sorted(temp.items(), key=lambda x: x[1], reverse=True)
+        sorted_counts = sorted(temp.items(), key=lambda x: x[1], reverse = True)
 
-        for elem, count in sorted_counts[:k]:
+        for elem, count in sorted_counts[: k]:
             temp_1.append(elem)
         
         return temp_1
